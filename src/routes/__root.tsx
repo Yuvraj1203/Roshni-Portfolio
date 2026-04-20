@@ -1,4 +1,5 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
+import favicon from "../assets/favicon.png";
 
 import appCss from "../styles.css?url";
 
@@ -39,6 +40,11 @@ export const Route = createRootRoute({
       { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
+      {
+        rel: "icon",
+        type: "image/png",
+        href: favicon,
+      },
       {
         rel: "stylesheet",
         href: appCss,
